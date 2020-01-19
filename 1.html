@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Exercise 1</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+  <div id="box">
+
+
+    <header>
+      <h1>Concordia Continuing Education </h1>
+      <h2> Diploma in Web Programming</h2>
+    </header>
+
+    <!-- <ul>
+    <li>Intro to Programming with Java</li><br>
+    <li>Intro to SQL</li><br>
+    <li>HTML5 and CSS</li><br>
+    <li>JavaScript</li><br><br>
+  </ul> -->
+  <script>
+  function sayHello(){
+      document.write("<strong>hello</strong>");
+    }
+    function calculate(a,b){
+      return a+b;
+    }
+
+    sayHello();
+      document.write("<br>Total courses are " + calculate(2,2));
+
+  function courses1(){
+    let course1 = "course1";
+	document.write("<body id=course1>");
+    document.write("<ul id=course1>");
+    document.write("<h1>Semester1</h1>");
+    document.write("<li>Intro to SQL - <strong>CEWP 215</strong></li><br>");
+    document.write("<li>HTML5 and CSS - <strong>CEWP 329</strong></li><br>");
+    document.write("</ul>");
+    document.write("<a id=course1 href='1.html'> Return to home page</a>");
+	document.write("</body");
+	let ul = document.getElementById('course1');
+    ul.style.backgroundColor = "#AD842B";
+  }
+
+  function courses2(){
+    document.write("<ul>");
+    document.write("<h1> Semester2 </h1>");
+    document.write("<li>Intro to Programming with Java - <strong>CEJV 416</strong> </li><br>");
+    document.write("<li>JavaScript - <strong>CEWP 339</strong></li><br><br>")
+    document.write("</ul>");
+    document.write("<a href='1.html'> Return to home page</a>");
+  }
+  </script>
+
+  <button class="buttons" onclick="courses1();"> Semester1</button>
+  <button title="Semester2"  value="Semester 2" onclick="courses2();"> Semester2</button>
+
+</div>
+
+</body>
+</html>
